@@ -103,3 +103,4 @@ app.get('/directors/:directorId/movies/', async (request, response) => {
   const movieList = await db.get(getmovieIdQuery)
   response.send(movieList)
 })
+module.exports=app;
